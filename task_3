@@ -1,0 +1,145 @@
+courses = []
+choice = 'random'
+
+def greetings():
+    print('\nAssalamu Aalayikum\n')
+
+def line():
+    print('------------------')
+
+def menu():
+    greetings()
+    line()
+    print('MENU')
+    line()
+    print('1. Add course')
+    print('2. Complete course')
+    print('3. View courses')
+    print('4. Exit')
+    line()
+    choice = input('Enter your choice: ')
+    return choice
+
+while choice != '4':
+    choice = menu()
+    if choice == '1':
+        course = input('Enter crouse name :  ')
+        crouses.append(course)
+        print('Course', course, 'added\n')
+    elif choice == '2':
+        course = input('Enter completed crouse name :D ')
+        if course in crouses:
+            crouses.remove(course)
+            print(course,'course completed' )
+        else:
+            print('Not found', course)
+    elif choice == '3':
+        print('View the courses:')
+        for course in crouses:
+            print(course)
+    elif choice == '4':
+        print('Thank you for service\n')
+    else:
+        print('Please enter your choice between 1 to 4 \n')
+Assalamu Aalayikum
+
+------------------
+MENU
+------------------
+1. Add course
+2. Complete course
+3. View courses
+4. Exit
+------------------
+Enter your choice: 1
+Enter crouse name :  AI theory
+Course AI theory added
+
+
+Assalamu Aalayikum
+
+------------------
+MENU
+------------------
+1. Add course
+2. Complete course
+3. View courses
+4. Exit
+------------------
+Enter your choice: 1
+Enter crouse name :  AI Lab
+Course AI Lab added
+
+
+Assalamu Aalayikum
+
+------------------
+MENU
+------------------
+1. Add course
+2. Complete course
+3. View courses
+4. Exit
+------------------
+Enter your choice: 1
+Enter crouse name :  DBMS theory
+Course DBMS theory added
+
+
+Assalamu Aalayikum
+
+------------------
+MENU
+------------------
+1. Add course
+2. Complete course
+3. View courses
+4. Exit
+------------------
+Enter your choice: 1
+Enter crouse name :  DBMS Lab
+Course DBMS Lab added
+
+
+Assalamu Aalayikum
+
+------------------
+MENU
+------------------
+1. Add course
+2. Complete course
+3. View courses
+4. Exit
+------------------
+Enter your choice: 2
+Enter completed crouse name : DBMS Lab
+DBMS Lab course completed
+
+Assalamu Aalayikum
+
+------------------
+MENU
+------------------
+1. Add course
+2. Complete course
+3. View courses
+4. Exit
+------------------
+Enter your choice: 3
+View the courses:
+AI theory
+AI Lab
+DBMS theory
+
+Assalamu Aalayikum
+
+------------------
+MENU
+------------------
+1. Add course
+2. Complete course
+3. View courses
+4. Exit
+------------------
+Enter your choice: 4
+Thank you for service
